@@ -128,6 +128,7 @@ int main(void)
         part1(input);
         free_input(input);
 
+        // strtok damaged previous input
         text_file *new_input = read_input("./input.txt");
         part2(new_input);
         free_input(input);
